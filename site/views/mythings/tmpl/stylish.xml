@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="MyThings Liste (Stylish)">
+		<message>MyThings Listenansicht mit extra CSS</message>
+	</layout>
+
+	<fields name="params">
+		<fieldset name="order"
+				  label="COM_MYTHINGS_ORDER_OPTIONS">
+			<field name="orderdir"
+				   type="list"
+				   default=""
+				   label="COM_MYTHINGS_ORDERDIR_LABEL">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="ASC">COM_MYTHINGS_OPTION_ASC</option>
+				<option value="DESC">COM_MYTHINGS_OPTION_DESC</option>
+			</field>
+			<field name="ordercol"
+				   type="list"
+				   default=""
+				   label="COM_MYTHINGS_ORDERCOL_LABEL">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="title">COM_MYTHINGS_TITLE_LABEL</option>
+				<option value="category_id">COM_MYTHINGS_CAT_LABEL</option>
+				<option value="lent_by">COM_MYTHINGS_LENTBY_LABEL</option>
+				<option value="lent">COM_MYTHINGS_LENT_LABEL</option>
+			</field>
+		</fieldset>
+
+	</fields>
+</metadata>

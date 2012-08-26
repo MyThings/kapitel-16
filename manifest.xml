@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="file" version="2.5.0" method="upgrade">
+	<name>MyThings alternative Listenansicht</name>
+	<author>WebMechanic</author>
+	<creationDate>27.07.2011</creationDate>
+	<copyright>(C)2012 WebMechanic. Alle Rechte vorbehalten.</copyright>
+	<license>GNU GPL v3</license>
+	<authorUrl>joomla.webmechanic.biz</authorUrl>
+	<version>0.19.0</version>
+
+	<description>
+	Alternatives Layout aus Kapitel 19.
+	</description>
+
+	<!-- Definition des Dateisatzes -->
+	<fileset>
+		<files folder="site/views/mythings/tmpl"
+				target="components/com_mythings/views/mythings/tmpl">
+			<filename>stylish.php</filename>
+			<filename>stylish.xml</filename>
+		</files>
+
+		<files folder="media/mythings/css"
+				target="media/mythings/css">
+			<filename>mythings.css</filename>
+		</files>
+	</fileset>
+
+</extension>

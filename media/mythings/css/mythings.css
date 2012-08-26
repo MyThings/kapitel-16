@@ -1,0 +1,48 @@
+/**
+ * Joomla! 2.5 - Erweiterungen programmieren
+ * Kapitel 16 - CSS zum alternativen Listenlayout
+ * mythings.css
+ * @author     webmechanic.biz
+ * @license	   GNU/GPL
+ */
+
+/* Wrapper */
+div.mythings {margin:10px; width:90%; position:relative}
+
+/* Tabellenansicht */
+table.things			{width:100%; border-collapse:collapse; border:1px solid}
+table.things thead		{}
+table.things tbody		{}
+table.things th			{padding:1ex}
+table.things td			{padding:.2ex 1ex}
+
+table.things th			{font-weight:bold;   text-align:center}
+table.things td			{font-weight:normal; text-align:left; vertical-align:top}
+
+.thing-list					{background-color:#fff}
+tbody tr:nth-of-type(odd)	{background-color:#efefef}
+tbody tr:nth-of-type(even)	{}
+
+/* Zeile mit einem Datensatz */
+.thing-item {}
+
+/* Thing "Status" Klassen */
+.thing-list .avail		{}
+.thing-list .unavail	{}
+.thing-list .mine		{}
+    .mine .title		,
+    .mine .lentby		{font-weight: bold}
+
+/* Felder */
+.thing-item .title		{border-right: 5px solid}
+    .avail .title		{border-right-color:#080}
+    .unavail .title		{border-right-color:#800}
+.thing-item .category	{}
+.thing-item .name		{}
+.thing-item .date		{}
+    .unavail .date		{background-color:rgb(255,235,235)}
+.thing-item .state		{}
+
+/* Einzelansicht */
+
+
